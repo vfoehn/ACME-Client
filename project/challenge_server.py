@@ -2,7 +2,11 @@ import threading
 import sys
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-
+"""
+This HTTP server is used to serve the HTTP challenge token. More precisely, the ACME client uploads the challenge token 
+to this server. Later on, the ACME server requests the token from this server.
+Note: This server does not support TLS because it does not have a valid certificate yet.
+"""
 class S(BaseHTTPRequestHandler):
     def _set_headers(self):
         self.send_response(200)

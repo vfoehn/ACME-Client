@@ -3,9 +3,10 @@ import ssl
 import threading
 import sys
 
-
-# We install an X.509 certificate on this server so it is able to support HTTPS connections.
-# Additionally, the server returns the certificate as a PEM file when requested by a GET request.
+"""
+We install an X.509 certificate on this server so it is able to support HTTPS connections.
+Additionally, the server returns the certificate as a PEM file when requested by a GET request.
+"""
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
     def _set_headers(self):
