@@ -1,0 +1,6 @@
+{
+    "challenge_type": "http01",
+    "dir": "../project",
+    "record": "127.0.0.1",
+    "domain": "www.example.com"
+}

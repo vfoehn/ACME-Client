@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# TODO:
+#  - Remove all temporary folder to test if folders are created correctly.
+
+echo "Compile your project here"
+pip install dnslib
+mkdir ../.well-known
+mkdir ../.well-known/acme-challenge
